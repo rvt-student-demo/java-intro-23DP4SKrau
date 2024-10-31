@@ -1,4 +1,4 @@
-5package lv.rvt;
+package lv.rvt;
 
 import java.util.*;
 
