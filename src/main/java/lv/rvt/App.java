@@ -4,21 +4,22 @@ import java.util.*;
 
 public class App 
 {
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) {
         Scanner scanner = new Scanner(System.in);
-        int sum = 0;
-        System.out.println("Enter a number: ");
 
-        while (true) {
-            int number = scanner.nextInt();
-            if (number == -1) {
-                break;
-            }
-            sum += number;
+        System.out.println("How many times?");
+        int times = scanner.nextInt();
+
+        int count = 0;
+        while (count < times) {
+            printText();
+            count++;
         }
-        System.out.println("OK");
-        System.out.println("Sum of the numbers: " + sum);
+
         scanner.close();
-   }
+    }
+
+    public static void printText() {
+        System.out.println("In a hole in the ground there lived a method");
+    }
 }
