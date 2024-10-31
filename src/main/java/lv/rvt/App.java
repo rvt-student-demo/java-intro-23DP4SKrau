@@ -9,19 +9,18 @@ public class App
         {
             Scanner scanner = new Scanner(System.in);
     
-            System.out.print("Enter a number: ");
-            int number = scanner.nextInt();
-            long factorial = 1;
+            System.out.println("Enter numbers: ");
     
-            if (number < 0) {
-                System.out.println("Factorial is not defined.");
-            } else {
-                for (int i = 1; i <= number; i++) {
-                    factorial *= i; 
+            while (true) {
+                int number = scanner.nextInt();
+    
+                if (number == -1) {
+                    System.out.println("OK");
+                    break;
                 }
-                System.out.println("Factorial is: " + factorial);
             }
             scanner.close();
        }
+    
     }   
 }
