@@ -6,15 +6,14 @@ public class App
 {
     public static void main( String[] args )
     {
-        Scanner reader = new Scanner(System.in);
-int number = Integer.valueOf(reader.nextLine());
+        Scanner scanner = new Scanner(System.in);
 
-  if (number % 4 != 0) {
-    System.out.println("The year is not a leap year.");
-} if (number % 5 == 0) {
-    System.out.println("The number is divisible by five!");
-} if (number % 6 != 0) {
-    System.out.println("The number is not divisible by six!");
-}
+        System.out.println("Give a number less than 100: ");
+        int userInput = scanner.nextInt();
+
+        for (int number = userInput; number <= 100; number ++) {
+            System.out.println(number);
+        }
+        scanner.close();
    }
 }
