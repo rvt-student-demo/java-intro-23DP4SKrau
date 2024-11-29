@@ -12,9 +12,3 @@ public class PaymentCard {
         return "The card has a balance of " + this.balance + " euros.";
     }
 }
-public class MainProgram {
-    public static void main(String[] args) {
-        PaymentCard card = new PaymentCard(50);
-        System.out.println(card);
-    }
-}

@@ -2,22 +2,39 @@ package lv.rvt;
 
 public class Product {
   private String name;
-  private double price;
-  private int quantity;
+  private String location;
+  private int weight;
 
-  public static void main(String[] args) {
-    Product product = new Product("Banana", 1.1, 13);
-    product.printProduct();
-}
-
-  public Product(String initialName, double initialPrice, int initialQuantity) {
-      this.name = initialName;
-      this.price = initialPrice;
-      this.quantity = initialQuantity;
+  public Product(String name) {
+      this.name = name;
+      this.location = "shelf";  
+      this.weight = 1;          
   }
 
+  public Product(String name, String location) {
+      this.name = name;
+      this.location = location;
+      this.weight = 1;          
+  }
 
-  public void printProduct() {
-      System.out.println(name + ", price " + price + ", " + quantity + " pcs");
+  public Product(String name, int weight) {
+      this.name = name;
+      this.location = "shelf";  
+      this.weight = weight;
+  }
+
+  @Override
+  public String toString() {
+      return name + " (" + weight + " kg) can be found from the " + location;
+  }
+
+  public static void main(String[] args) {
+      Product tapeMeasure = new Product("Tape measure");
+      Product plaster = new Product("Plaster", "home improvement section");
+      Product tyre = new Product("Tyre", 5);
+
+      System.out.println(tapeMeasure);
+      System.out.println(plaster);
+      System.out.println(tyre);
   }
 }
