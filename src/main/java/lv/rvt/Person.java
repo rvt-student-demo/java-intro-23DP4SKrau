@@ -6,7 +6,6 @@ public class Person {
     private int height;
     private int weight;
 
-    // Constructor to initialize the Person object
     public Person(String name, int age, int height, int weight) {
         this.name = name;
         this.age = age;
@@ -14,12 +13,10 @@ public class Person {
         this.weight = weight;
     }
 
-    // Getter for the weight
     public int getWeight() {
         return weight;
     }
 
-    // Getter for the name
     public String getName() {
         return name;
     }
