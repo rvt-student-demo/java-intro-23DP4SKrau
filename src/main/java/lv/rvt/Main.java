@@ -23,7 +23,5 @@ public class Main {
             elements[i] = scanner.nextInt();
           
         }
-        
     }
-
   }          
